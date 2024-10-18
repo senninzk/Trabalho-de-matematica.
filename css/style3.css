@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+}
+header{
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  width: 100%;
+  height: 9vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 10px;
+}
+.logo{
+  margin: auto;
+  width: 100px;
+}
+.nav-bar{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav-bar a{
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s ease;
+}
+.nav-bar a:hover{
+  border-bottom: 2px solid blue;
+}
+.container{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 10px;
+  background: url(../imgs/sports-pictures-appr6ednhybtefei.jpg) center center/cover;
+  background-color: rgba(0,0,0,0.6);
+  background-blend-mode: color;
+}
+.container h2{
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.container p{
+  color: #919496;
+  font-size: 1.4rem;
+  padding: 24px 20px;
+  font-weight: 600;
+  max-width: 750px;
+  text-align: center;
+}
+
+.png-agradecimento{
+  width: 300px;
+  animation: float 1.5s infinite alternate;
+}
+@keyframes float{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(15px);
+  }
+}
+.btn{
+  background-color: purple;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 60px;
+  border: none;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+#footer{
+  background: #000;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  padding: 80px 0;
+}
+.footer-menu{
+  margin: 0 40px;
+  justify-content: center;
+}
+.footer-menu p{
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #919496;
+}
+.footer-menu-item{
+  margin: 25px 0;
+}
+.footer-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-info-items{
+  display: flex;
+  gap: 40px;
+  padding: 0px 14px;
+  color: #919496;
+  font-size: 0.7rem;
+}
+.rigth{
+  padding: 0px 14px;
+  color: #919496;
+  font-size: 0.7rem
+}
+/*Efects*/
+.footer-menu-item:hover{
+  color: blue;
+  cursor: pointer;
+}
+.footer-info-item:hover{
+  cursor: pointer;
+  color: blue;
+}

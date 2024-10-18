@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+}
+
+/*Header*/
+
+header{
+  background-color: rgba(0,0,0,0.6);
+  position: fixed;
+  width: 100%;
+  height: 9vh;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+nav{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 15px 10px;
+}
+.logo{
+  margin: auto;
+  width: 100px;
+}
+.nav-bar{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+.nav-bar a{
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.5s ease;
+}
+.nav-bar a:hover{
+  border-bottom: 2px solid blue;
+}
+
+/*Container*/
+
+.show-case {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background: url(../imgs/cr7-background.jpg) center center/cover;
+  background-color: rgba(0,0,0,0.6);
+  background-blend-mode: color;
+}
+.show-case2{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  background: url(../imgs/kobe.jpg) center center/cover;
+  background-color: rgba(0,0,0,0.6);
+  background-blend-mode: color;
+}
+.show-case-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center
+}
+.show-case-container h2{
+  color: white;
+  font-size: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.show-case-container p{
+  color: #919496;
+  font-size: 1rem;
+  padding: 24px 20px;
+  font-weight: 600;
+}
+.btn{
+  background-color: blue;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 60px;
+  border: none;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.show-case-container2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 14px 12px;
+  text-align: center;
+  flex-direction: 1;
+  gap: 20px;
+}
+.show-case-container2 h2{
+  color: red;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  font-weight: bold;
+  text-align: center;
+  
+}
+.show-case-container2 p{
+  color: #919496;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.btn-2{
+  background-color: red;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  padding: 10px 60px;
+  border: none;
+  border-radius: 30px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+.img-logo{
+  animation: float 1.5s infinite alternate;
+}
+@keyframes float{
+  0%{
+    transform: translateY(0);
+  }
+  100%{
+    transform: translateY(15px);
+  }
+}
+
+/*Footer*/
+
+#footer{
+  background: #000;
+  color: #fff;
+}
+.footer-content{
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  margin: auto;
+  padding: 80px 0;
+}
+.footer-menu{
+  margin: 0 40px;
+  justify-content: center;
+}
+.footer-menu p{
+  font-weight: bold;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  color: #919496;
+}
+.footer-menu-item{
+  margin: 25px 0;
+}
+.footer-info{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-info-items{
+  display: flex;
+  gap: 40px;
+  padding: 0px 14px;
+  color: #919496;
+  font-size: 0.7rem;
+}
+.rigth{
+  padding: 0px 14px;
+  color: #919496;
+  font-size: 0.7rem
+}
+/*Efects*/
+.footer-menu-item:hover{
+  color: blue;
+  cursor: pointer;
+}
+.footer-info-item:hover{
+  cursor: pointer;
+  color: blue;
+}
